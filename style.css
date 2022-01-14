@@ -1,0 +1,52 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    margin: 71px 0px 0px 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    border-bottom: 2px solid gray;
+    margin: 0px 30px;
+}
+
+#logo{
+    padding-left: 30px;
+}
+
+#logo h1 {
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    background-color: white;
+    top: 0px;
+    position: fixed;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    right: 0px;
+    left: 0px;
+}
+
+nav ul {
+    float: right;
+    padding-right: 30px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 10px;
+}
