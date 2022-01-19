@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="laptop_.jpg" type="image/jpg">
+    <link rel="icon" href="./assets/laptop_.jpg" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -13,22 +13,72 @@
     <title>Basak Percin</title>
 </head>
 <body>
-    <!-- header and nav seection -->
+<!-- header and nav seection -->
     <header>
-        
         <nav>
             <div id="logo"><h1> 👩‍💻 Basak Percin</h1></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <ul class="ham-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
-    <!-- main section -->
+<!-- main section -->
     <main>
-        
+        <!-- profile photo -->
+        <div class="wrapper">
+            <div id="profile-pic" class="one box photo">
+                <img src="./assets/basakpp.jpg" alt="profilepic">
+            </div>
+            <!-- about paragraph -->
+            <div id="about" class="two box about">
+                <h2>Hello, I'm Basak Percin</h2>
+                <p>This is my portfolio page that I have created to share my work as I build along the way</p>
+                <h3>Skills</h3>
+                <ul class="skill-list">
+                    <li>
+                        <img src="./assets/html.png" alt="html-icon">
+                    </li>
+                    <li>
+                        <img src="./assets/css.png" alt="css-icon">
+                    </li>
+                    <li>
+                        <img src="./assets/js.png" alt="javascript-icon">
+                    </li>
+                    <li>
+                        <img src="./assets/git.png" alt="git-icon">
+                    </li>
+                    <li>
+                        <img src="./assets/adobexd.png" alt="adobexd-icon">
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+
+<!-- projects section -->
+        <div id="work" class="projects">
+            <h2>Projects</h2>
+            <ul id="project-list">
+                <li class="project-box">
+                    <img class="project-img-style" src="" alt="">
+                    <p class="project-text"></p>
+                    <a class="project-button" href=""></a>
+                </li>
+            </ul>
+        </div>
     </main>
 
 
