@@ -91,6 +91,7 @@ nav li a {
     gap: 10px;
     grid-template-rows: repeat(5, -50%);
     margin: 50px;
+    justify-content: space-evenly;
 }
 
 .photo {
@@ -118,8 +119,25 @@ nav li a {
     border-radius: 5px;
 }
 
-.skill h2 {
-    padding-left: 30px;
+.about h2 {
+    margin-top: 50px;
+}
+
+.skill-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.skill-list li {
+    padding: 10px;
+}
+
+.skill-list li img {
+    height: 48px;
+    width: 48px;
 }
 
 .projects h2 {
