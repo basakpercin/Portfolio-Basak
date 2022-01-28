@@ -9,11 +9,6 @@ body {
     min-width: 375px;
 }
 
-header {
-    border-bottom: 2px solid darkgray;
-    margin: 0px 30px;
-}
-
 #logo{
     padding-left: 30px;
 }
@@ -34,8 +29,13 @@ nav {
     z-index: 100;
     right: 0px;
     left: 0px;
+    border-bottom: 2px solid darkgray;
+    width: 100%;
 }
-
+.navbar-link {
+    text-decoration: none;
+    color: black;
+}
 nav ul {
     float: right;
     padding-right: 30px;
@@ -90,7 +90,7 @@ nav li a {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 50px;
+    padding: 50px;
     justify-content: space-evenly;
 }
 
@@ -104,8 +104,9 @@ nav li a {
 }
 
 .photo img{
-    width: 550px;
-    height: 360px;
+    width: 100%;
+    height: auto;
+    max-width: 550px;
     border-radius: 5px;
 }
 
@@ -130,11 +131,15 @@ nav li a {
     width: 48px;
 }
 
+.projects {
+    box-sizing: border-box;
+}
+
 .projects h2 {
     padding-left: 30px;
     padding-bottom: 10px;
     border-bottom: 2px solid darkgray;
-    margin: 60px;
+    margin: 0px 60px 60px 60px;
 }
   
 .project-list {
@@ -143,10 +148,14 @@ nav li a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-left: 0px;
+}
+
+.project-list li {
+    max-height: 600px;
 }
 
 .project-box {
-    height: 520px;
     width: 500px;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -155,12 +164,17 @@ nav li a {
 
 .project-img-style {
     width: 100%;
-    height: 70%;
+    height: auto;
+    max-height: 285px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .box-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0px 10px;
+    padding: 30px;
 }
 
 .box-text h3 {
@@ -174,7 +188,10 @@ nav li a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 15px;
+}
+
+.icons {
+    padding: 10px;
 }
 
 .icons-button img {
@@ -194,20 +211,34 @@ nav li a {
     color: black;
 }
 
-.maynooth-intro {
-    display: flex;
-    gap: 10px;
-    margin: 50px;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+#maynooth-page {
+    box-sizing: border-box;
+}
+
+.maynooth-intro h2 {
+    padding: 30px 0px 10px 30px;
+    margin: 60px 60px 0px 60px;
+    border-bottom: 2px solid lightgray;
 }
 
 .maynooth-about {
-    max-width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.maynooth-about p {
+    max-width: 750px;
+    min-width: 350px;
+    padding: 40px;
+}
 
-.img-presentation img{
+.img-presentation {
+    width: 100%;
+    padding: 40px;
+    max-width: 450px;
 }
 
 .maynooth-main h3 {
@@ -215,10 +246,6 @@ nav li a {
     padding-bottom: 10px;
     margin: 60px;
     border-bottom: 2px solid lightgray;
-}
-
-.maynooth-main p {
-    margin-left: 70px;
 }
 
 .LF-img {
@@ -245,15 +272,41 @@ nav li a {
     max-height: 560px;
 }
 
-.brand-img{
-    text-align: center;
-    margin-bottom: 60px;
+.rebranding h3 {
+    margin-bottom: 0px;
+}
+ 
+.img-list-logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.img-list-logo li {
+    padding: 40px;
+}
+
+.img-list-logo li h4 {
+    text-decoration: underline;
+}
+
+.img-list-logo img {
+    width: 100%;
+    max-width: 350px;
 }
 
 .contact-page {
     margin-top: 50px;
     text-align: center;
     min-height: 100vh;
+}
+
+.contact-page h3 {
+    padding-top: 50px;
 }
 
 footer {
@@ -268,3 +321,43 @@ footer h2 {
     padding-right: 50px;
 }
 
+
+@media only screen and (max-width: 460px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .skill-list li img {
+        height: 24px;
+        width: 24px;
+    }
+    
+}
+
+@media only screen and (max-width: 610px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+        padding-right: 40px;
+        position: relative;
+    }
+
+    .hamburger:hover .ham-list{
+        display: block;
+    }
+}

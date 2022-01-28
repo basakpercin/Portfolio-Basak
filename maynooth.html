@@ -16,42 +16,42 @@
 <!-- header and nav seection -->
     <header>
         <nav>
-            <div id="logo"><h1> 👩‍💻 Basak Percin</h1></div>
-            <ul>
+            <div id="logo"><a class="navbar-link" href="index.html"><h1> 👩‍💻 Basak Percin</h1></a></div>
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <ul class="ham-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <ul class="ham-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
     </header>
-    <main>
+
+    <main id="maynooth-page">
         <div class="maynooth-intro">
-            <div class="maynooth-about">
-                <h2>Maynooth Project</h2>
-                <p>This project was part of Daniel Scott's User Experience Design Essentials course on Udemy.</p>
-                <p>The objective of the project was to design an online furniture shopping website named Maynooth
-                    Furniture, whose competitors were businesses like www.habitat.co.uk, www.made.com, and www.ikea.com.
-                </p>
-                <p>The persona was a 50-year old executive named Katherine whose children left for university. Now she
-                    is looking to remodel her 4 bedroom home and browses style guides online, and she is mostly on
-                    Pinterest for her design ideas.</p>
-                <p>
-                    While I was designing the website, I tried to stick with the current habits of customers using
-                    websites, and get inspired from the best practices.
-                </p>
-            </div>
-            <div class="img-presentation">
-                <img src="./assets/a_presentation.png" alt="presentation-img">
-            </div>
+            <h2>Maynooth Project</h2>
+        </div>   
+
+        <div class="maynooth-about">                
+            <p>This project was part of Daniel Scott's User Experience Design Essentials course on Udemy.<br><br>
+                The objective of the project was to design an online furniture shopping website named Maynooth
+                Furniture, whose competitors were businesses like www.habitat.co.uk, www.made.com, and www.ikea.com.<br><br>
+                The persona was a 50-year old executive named Katherine whose children left for university. Now she
+                is looking to remodel her 4 bedroom home and browses style guides online, and she is mostly on
+                Pinterest for her design ideas.<br><br>
+                While I was designing the website, I tried to stick with the current habits of customers using
+                websites, and get inspired from the best practices.
+            </p>
+            <img class="img-presentation" src="./assets/a_presentation.png" alt="presentation-img">
         </div>
+ 
 
         <div class="maynooth-main">
             <div class="low-fidelity">
@@ -72,14 +72,26 @@
             </div>
             <div class="rebranding">
                 <h3>Rebranding</h3>
-                <p>Changed the Maynooth logo for it to have a more signature-look and easier to remember. Changed colors into more earthy colors to give a more warm, safe, natural and cozy impression.</p>
-                <div class="brand-img">
-                    <img src="./assets/Maynooth-Logo-Change.png" alt="Maynooth-Logo-Change">
+                <div class="rebrand-about">
+                    <ul class="img-list-logo">
+                        <li>
+                            <h4>
+                                Maynooth Furniture Old Logo
+                            </h4>                            
+                            <img src="./assets/maynooth-old.png" alt="maynooth-old">
+                        </li>
+                        <li>
+                            <h4>
+                                Maynooth Furniture New Logo
+                            </h4>
+                            <img src="./assets/maynooth-new.png" alt="maynooth-new">                            
+                        </li>
+                    </ul>
                 </div>
+
             </div>
             
         </div>
-
     </main>
 
 
