@@ -121,10 +121,16 @@ nav li a {
 
 .fa-moon {
   color: pink;
+  font-size: 0.4rem;
+  margin-bottom: 2px;
+  margin-right: 2px;
 }
 
 .fa-sun {
   color: yellow;
+  font-size: 0.5rem;
+  margin-left: 3.5px;
+  margin-bottom: 2px;
 }
 
 .hamburger {
@@ -210,10 +216,6 @@ nav li a {
   width: 48px;
 }
 
-/* .projects {
-    box-sizing: border-box;
-} */
-
 .projects h2 {
   padding-left: 30px;
   padding-bottom: 10px;
@@ -271,10 +273,6 @@ nav li a {
 
 .icons {
   padding: 10px;
-}
-
-.icon {
-    
 }
 
 .icons-button img {
