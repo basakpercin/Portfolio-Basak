@@ -120,15 +120,13 @@ nav li a {
 }
 
 .fa-moon {
-  color: pink;
-  font-size: 0.4rem;
+  font-size: 0.37rem;
   margin-bottom: 2px;
   margin-right: 2px;
 }
 
 .fa-sun {
-  color: yellow;
-  font-size: 0.5rem;
+  font-size: 0.37rem;
   margin-left: 3.5px;
   margin-bottom: 2px;
 }
