@@ -9,27 +9,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Basak Percin</title>
 </head>
 <body>
 <!-- header and nav seection -->
     <header>
-        <nav>
-            <div id="logo"><a class="navbar-link" href="index.html"><h1> 👩‍💻 Basak Percin</h1></a></div>
+        <nav id="navElement">
+            <div id="logo"><a  class="navbar-link" href="index.html"><h1 id="logoLink"> 👩‍💻 Basak Percin</h1></a></div>
+            
             <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id="homeLink" href="index.html">Home</a></li>
+                <li><a id="contactLink" href="contact.html">Contact</a></li>
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                  <label for="checkbox" class="label">
+                    <i class="fa-solid fa-moon-stars"></i>
+                    <i class='fas fa-sun'></i>
+                    <div class='ball'>
+                  </label>
+                </div>
             </ul>
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <ul class="ham-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <div class="hamburgerCheckbox">
+                <div class="hamburger" onclick="">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <ul id="hamList" class="ham-list">
+                        <li><a id="homeHam" href="index.html">Home</a></li>
+                        <li><a id="contactHam" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkboxSecond">
+                    <label for="checkboxSecond" class="label">
+                    <i class="fa-solid fa-moon-stars"></i>
+                    <i class='fas fa-sun'></i>
+                    <div class='ball'>
+                    </label><br>
+                </div>
             </div>
         </nav>
     </header>
@@ -99,5 +117,6 @@
     <footer>
         <h2>&#127880;  &#127881;</h2>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
